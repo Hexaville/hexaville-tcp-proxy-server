@@ -1,0 +1,21 @@
+{
+  "name": "hexaville-tcp-proxy",
+  "version": "0.1.0",
+  "description": "A TCP Proxy Sever that can pool remote connections",
+  "main": "lib/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "jackpot": "0.0.6",
+    "lodash": "^4.17.4",
+    "log4js": "^2.0.1",
+    "mysql": "^2.13.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2"
+  }
+}
