@@ -12,13 +12,13 @@ execution unit. such as lambda) when building web applications using serverless 
             +-----------+   tcp
 client ---- | functions | ------------+                            
             +-----------+             |                            pooled tcp                            
-                                   +------------------------------------+  connections  +----------------------------+
-                                   |                                    | ------------- |                            |
-            +-----------+   tcp    |                                    |               |                            |
-client ---- | functions | -------- | hexaville-tcp-proxy-server-cluster | ------------- |   Thread based DataBase    |
-            +-----------+          |                                    |               |                            |
-                                   |                                    | ------------- |                            |
-                                   +------------------------------------+               +----------------------------+
+                                   +------------------------------------+  connections  +--------------+
+                                   |                                    | ------------- |              |
+            +-----------+   tcp    |                                    |               |              | 
+client ---- | functions | -------- | hexaville-tcp-proxy-server-cluster | ------------- |   DataBase   |
+            +-----------+          |                                    |               |              |
+                                   |                                    | ------------- |              |
+                                   +------------------------------------+               +--------------+
             +-----------+   tcp       |
 client ---- | functions |-------------+
             +-----------+                        
