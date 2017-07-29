@@ -11,7 +11,7 @@ execution unit. such as lambda) when building web applications using serverless 
 ```
             +-----------+   tcp
 client ---- | functions | ------------+                            
-            +-----------+             |                            pooled tcp                            
+            +-----------+             |                                    pooled tcp                            
                                    +------------------------------------+  connections  +--------------+
                                    |                                    | ------------- |              |
             +-----------+   tcp    |                                    |               |              | 
