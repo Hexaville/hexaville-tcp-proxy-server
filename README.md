@@ -2,7 +2,7 @@
 
 A TCP Proxy Sever that can pool remote connections
 
-## Synopsis
+## Strategy
 
 hexaville-tcp-proxy-server is aimed to develop to prevent enormous number of connections between middleware and functions(serverless
 execution unit. such as lambda) when building web applications using serverless computing.
